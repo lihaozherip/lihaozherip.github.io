@@ -4,6 +4,7 @@
     <title>李昊哲网上灵堂</title>
     <style type="text/css"> 
         div {
+            margin: auto;
             position: fixed;
             top: 0;
             left: 0;
@@ -12,7 +13,6 @@
             z-index: -1;
         }
         div > img {
-            height: 100%;
             width: 100%;
             border: 0;
         }
@@ -20,6 +20,14 @@
 </head>
 
 <body>
+    <script type="text/javascript">
+        window.alert("双击屏幕 先上dj");
+        document.addEventListener('click', function () {
+                dj = new Audio('./WalkingInTheSun.mp3');
+                dj.play();
+            });
+    </script>
+    <audio src="./WalkingInTheSun.mp3" autoplay="autoplay" loop="loop"></audio>
     <div><img src="./background.jpg"> </img></div>
 </body>
 </html>
